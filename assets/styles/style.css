@@ -169,13 +169,15 @@ a {
 .up__title {
   color: white;
   text-align: center;
-  margin-top: 207px;
+  margin-top: 197px;
 }
 .title-discription {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 562px;
+
+  margin: 0 auto;
 }
 
 .up {
