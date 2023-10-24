@@ -171,18 +171,16 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  
+
   margin-top: 90px;
 }
 
 .up__title {
   color: white;
   text-align: center;
-
 }
 .title-discription {
   text-align: center;
-
 
   width: 562px;
 
@@ -230,8 +228,6 @@ a {
   flex-direction: row;
   gap: 30px;
 }
-
-
 
 .main-title__special {
   margin-top: 135px;
@@ -289,7 +285,7 @@ a {
 .card-item {
   width: 370px;
   height: 531px;
-  
+
   border-radius: 50px;
   color: #fff;
   padding: 50px;
@@ -309,7 +305,6 @@ a {
 .card-item:hover .more {
   background: var(--Green-400, #286562);
   border-radius: 50px;
-  
 }
 
 .card-item__up {
@@ -324,7 +319,6 @@ a {
 .card-item__down {
   display: flex;
   flex-direction: row;
-  
 }
 
 .more {
@@ -343,7 +337,7 @@ a {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(/assets/img/card-tour-photo-1.jpg);
-    background-position: center center;
+  background-position: center center;
 }
 
 .card-item__two {
@@ -354,7 +348,7 @@ a {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(/assets/img/card-tour-photo-2.jpg);
-    background-position: center center;
+  background-position: center center;
 }
 .card-item__three {
   margin-right: 0px;
@@ -365,7 +359,7 @@ a {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(/assets/img/card-tour-photo-3.jpg);
-    background-position: center center;
+  background-position: center center;
 }
 .card-item__four {
   background: linear-gradient(
@@ -375,7 +369,7 @@ a {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(/assets/img/card-tour-photo-4.jpg);
-    background-position: center center;
+  background-position: center center;
 }
 .card-item__five {
   background: linear-gradient(
@@ -385,7 +379,7 @@ a {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(/assets/img/card-tour-photo-5.jpg);
-    background-position: center center;
+  background-position: center center;
 }
 .card-item__six {
   margin-right: 0px;
@@ -396,7 +390,7 @@ a {
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(/assets/img/card-tour-photo-6.jpg);
-    background-position: center center;
+  background-position: center center;
 }
 
 .secondary-title {
@@ -407,6 +401,7 @@ a {
 .form__inner {
   width: 100%;
   background-color: #fff;
+
   display: flex;
   flex-direction: column;
   gap: 33px;
@@ -417,90 +412,85 @@ a {
   margin-bottom: 135px;
 }
 
-.form-items__column {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form-list {
+.form__inner-list {
   display: flex;
   flex-direction: column;
+  gap: 33px;
+}
+
+.form__inner-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 30px;
 }
 
-.form-item {
+.form__inner-item {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  gap: 8px;
+  width: 100%;
 }
 
-.form-item__name {
-  padding-bottom: 8px;
-}
+.inner-item__input {
+  height: 7.3vh;
+  padding: 20px;
 
-.form-item__input {
-  padding: 20px 20px 20px 20px;
-  color: #a6a6a6;
   border-radius: 10px;
   border: 1px solid #f4f0e9;
   background: #f9f7f4;
 }
 
-.form-item__comment {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 33px;
-}
-.form-item__input-comment {
-  padding: 20px 20px 20px 20px;
+.inner-item__input-special {
+  height: 16.5vh;
+
   border-radius: 10px;
   border: 1px solid #f4f0e9;
   background: #f9f7f4;
 }
 
-.form-list__radio {
+.radio-age {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 31px;
 }
-
-.form-item__radio {
+.radio-age label {
   display: flex;
   flex-direction: row;
   gap: 11px;
 }
-
-.form-item__input-radio {
+.radio-age input {
   width: 26px;
   height: 26px;
-  border: 2px black solid;
 }
 
-.form-item__checkbox {
+.form__inner-license {
   display: flex;
   flex-direction: row;
-  gap: 11px;
+  gap: 19px;
 }
-
-.form-item__input-checkbox {
+.form__inner-license input {
   width: 26px;
   height: 26px;
 }
+.form__inner-license p {
+  color: #a6a6a6;
+}
+.form__inner-license strong {
+  color: #1b1f2b;
+}
 
-.form-item__submit {
+.form__inner-line__btns-list {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
-
-.form-item__input-search,
-.form-item__input-reset {
+.inner-line__btn {
+  width: 12.3vw;
+  height: 6.4vh;
   border-radius: 10px;
-  width: 235px;
-  height: 58px;
-  cursor: pointer;
+  border: none;
+  
 
   display: flex;
   padding: 15px 30px;
@@ -508,15 +498,15 @@ a {
   align-items: center;
   gap: 10px;
 }
-
-.form-item__input-search {
-  background-color: #286562;
+.inner-line__btn-submit {
   color: white;
+  background: var(--Green-400, #286562);
+  
 }
-
-.form-item__input-reset {
-  background-color: #e0f0e5;
+.inner-line__btn-reset {
   color: #286562;
+  background: #E0F0E5;
+  
 }
 
 .reviews-list {
@@ -571,7 +561,6 @@ a {
 
   margin-left: 30px;
   margin-right: 30px;
-  
 }
 
 .photo-travel-items {
@@ -582,7 +571,6 @@ a {
 
   align-items: flex-start;
   align-self: stretch;
-  
 }
 .photo-travel-item {
   height: 32vh;
@@ -607,7 +595,7 @@ a {
 
 .story-travel-item {
   height: 567px;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   border-radius: 50px;
 
   display: flex;
@@ -625,14 +613,10 @@ a {
 }
 .story-travel-item p {
   width: 554px;
-  
 }
-
-
 
 .story-travel-item:hover .more {
   background: var(--Green-400, #286562);
-  
 }
 
 .story-travel-card__top {
@@ -648,7 +632,6 @@ a {
   list-style: inside;
 }
 
-
 .story-travel-card__bottom {
   display: flex;
   padding: 0px 60px 60px 60px;
@@ -662,14 +645,13 @@ a {
   display: flex;
   flex-direction: row;
   gap: 35px;
-  color: var(--White, #FFF);
-  
+  color: var(--White, #fff);
 }
 
 .story-travel-card__social-list {
   display: flex;
   flex-direction: row;
-  gap: 35px ;
+  gap: 35px;
 }
 
 .story-travel-card__social-item {
@@ -688,7 +670,7 @@ a {
   height: auto;
 }
 
-.story-travel-item-bg{
+.story-travel-item-bg {
   border-radius: 50px;
 
   position: absolute;
@@ -701,13 +683,21 @@ a {
   transform: scale(1, 1.2);
 }
 .travel-item__two {
-  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0.01%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
     url(/assets/img/story-photo-2.jpg);
   background-size: cover;
   background-position: center center;
 }
 .travel-item__three {
-  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0.01%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
     url(/assets/img/story-photo-3.jpg);
   background-size: cover;
   background-position: center center;
@@ -733,9 +723,8 @@ a {
   gap: 20px;
 }
 
-.callback-text p{
-  color: var(--Gray-300, #A6A6A6);
-  
+.callback-text p {
+  color: var(--Gray-300, #a6a6a6);
 }
 
 .callback-email {
@@ -743,8 +732,7 @@ a {
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  color: var(--Black, #1B1F2B);
-  
+  color: var(--Black, #1b1f2b);
 }
 .callback-email:hover {
   background-size: 100% 2px;
@@ -754,8 +742,4 @@ a {
   width: 370px;
   height: 370px;
   border-radius: 50px;
-  
 }
-
-
-

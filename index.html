@@ -82,7 +82,7 @@
           </ul>
 
           <ul class="card-list">
-          <li>
+            <li>
               <ul class="card-list-inner">
                 <li class="card-item card-item__one">
                   <div class="card-item__up">
@@ -167,67 +167,64 @@
             Идейные соображения высшего порядка, <br />
             а также рамки и место обучения кадров
           </p>
-          <div class="form__inner p-normal">
-            <div class="form-items__column">
-              <ul class="form-list">
-                <li class="form-item">
-                  <label for="name" class="form-item__name">Имя</label>
-                  <input type="text" name="name" placeholder="Введите Ваше имя" class="form-item__input p-normal" />
-                </li>
-                <li class="form-item">
-                  <label for="email" class="form-item__name">Email</label>
-                  <input type="email" name="email" placeholder="example@mail.com" class="form-item__input p-normal" />
-                </li>
-                <li class="form-item">
-                  <label for="date-from" class="form-item__name">Дата от</label>
-                  <input type="text" name="date-from" placeholder="ДД.ММ.ГГГГ" class="form-item__input p-normal" />
-                </li>
-              </ul>
-              <ul class="form-list">
-                <li class="form-item">
-                  <label for="direction" class="form-item__name">Направление</label>
-                  <input type="text" name="direction" placeholder="Куда хотите ехать"
-                    class="form-item__input p-normal" />
-                </li>
-                <li class="form-item">
-                  <label for="telephone-number" class="form-item__name">Телефон</label>
-                  <input type="tel" name="telephone-number" placeholder="+ 7 (_ _ _)_ _ _-_ _-_ _"
-                    class="form-item__input p-normal" />
-                </li>
-                <li class="form-item">
-                  <label for="date-before" class="form-item__name">Дата до</label>
-                  <input type="text" name="date-before" placeholder="ДД.ММ.ГГГГ" class="form-item__input p-normal" />
-                </li>
-              </ul>
-            </div>
-            <div class="form-item__comment">
-              <label for="comment" class="form-item__name">Комментарий</label>
-              <input type="text" name="comment" class="form-item__input-comment p-normal" />
-            </div>
-            <div class="form-item">
-              <label for="years" class="form-item__name">Вам есть 18 лет?</label>
-              <div class="form-list__radio">
-                <div class="form-item__radio">
-                  <input id="radio-1" type="radio" name="years" value="yes"
-                    class="form-item__input form-item__input-radio" />
-                  <label for="radio-1">Да</label>
-                </div>
-                <div class="form-item__radio">
-                  <input type="radio" name="years" value="no" class="form-item__input form-item__input-radio" />
-                  <label for="radio-2">Нет</label>
-                </div>
-              </div>
-            </div>
-            <div class="form-item__checkbox">
-              <input type="checkbox" name="license" class="form-item__input form-item__input-checkbox" />
-              <label for="license" class="form-item__name">Нажимая кнопку, я принимаю условия
-                <strong>Лицензионного договора</strong></label>
-            </div>
-            <div class="form-item__submit">
-              <input type="submit" value="Найти тур" class="form-item__input form-item__input-search p-normal" />
-              <input type="reset" value="Сбросить" class="form-item__input form-item__input-reset p-normal" />
-            </div>
-          </div>
+          <form class="form__inner p-normal">
+            <ul class="form__inner-list">
+              <li class="form__inner-line">
+                <label for="name" class="form__inner-item">Имя
+                  <input type="text" id="name" placeholder="Введите Ваше имя" class="inner-item__input p-normal">
+                </label>
+                <label for="direction" class="form__inner-item">Направление
+                  <input type="text" id="direction" placeholder="Куда хотите ехать" class="inner-item__input p-normal">
+                  
+                </label>
+              </li>
+
+              <li class="form__inner-line">
+                <label for="email" class="form__inner-item">Email
+                  <input type="email" name="email" id="email" placeholder="example@mail.com" class="inner-item__input p-normal">
+                </label>
+                <label for="telephone" class="form__inner-item">Телефон
+                  <input type="tel" name="telephone" id="telephone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="inner-item__input p-normal">
+                </label>
+              </li>
+
+              <li class="form__inner-line">
+                <label for="date-from" class="form__inner-item">Дата от
+                  <input type="date" placeholder="ДД.ММ.ГГГГ" class="inner-item__input p-normal">
+                </label>
+                <label for="date-before" class="form__inner-item">Дата до
+                  <input type="date" placeholder="ДД.ММ.ГГГГ" class="inner-item__input p-normal">
+                </label>
+              </li>
+
+              <li class="form__inner-line">
+                <label for="comment" class="form__inner-item">
+                  <p class="p-normal">Комментарий</p>
+                  <input type="text" class="inner-item__input-special p-normal">
+                </label>
+              </li>
+              
+              <li class="form__inner-line">
+                <label for="radio-age" class="form__inner-item">
+                  <p>Вам есть 18 лет?</p>
+                  <div class="radio-age">
+                    <label for="radio-age"><input type="radio" name="radio-age" id="age-yes">Да</label>
+                    <label for="radio-age"><input type="radio" name="radio-age" id="age-no">Нет</label>
+                  </div>
+                </label>
+              </li>
+
+              <li class="form__inner-line">
+                <label for="license-agree" class="form__inner-license"><input type="checkbox"><p class="p-small">Нажимая кнопку, я принимаю условия <strong>Лицензионного договора</strong></p></label>
+              </li>
+
+              <li class="form__inner-line__btns-list">
+                <input type="submit" value="Найти тур" class="inner-line__btn inner-line__btn-submit p-normal">
+                <input type="reset" value="Сбросить" class="inner-line__btn inner-line__btn-reset p-normal">
+              </li>
+
+            </ul>
+          </form>
         </div>
       </section>
 
@@ -238,8 +235,8 @@
             путешественников
           </h2>
           <p class="secondary-title p-normal">
-            Идейные соображения высшего порядка, <br />
-            а также рамки и место обучения кадров
+            Идейные соображения высшего порядка,
+            а <br>также рамки и место обучения кадров
           </p>
           <div class="reviews-list">
             <div class="reviews-item p-normal">
